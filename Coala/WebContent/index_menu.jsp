@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     <!-- main_Header 메인화면 헤더 -->
 <header id="header" class="alt">
-  <a href="index.html" class="nav-item">
+  <a href="index.jsp" class="nav-item">
                                Coala
                   <!-- <img src="img/logo.png" alt="Logo"> -->
   </a>
