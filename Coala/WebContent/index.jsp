@@ -25,9 +25,9 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2 id="size">Covid-19<br/>
+							<h1>Covid-19<br/>
 							코로나 자가진단
-							</h2>
+							</h1>
 							<p>Another fine responsive<br />
 							site template freebie<br />
 							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
