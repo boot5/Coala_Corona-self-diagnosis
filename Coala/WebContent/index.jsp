@@ -1,11 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Spectral by HTML5 UP</title>
@@ -26,9 +21,9 @@
 					<section id="banner">
 						<div class="inner">
 							<h1 id="size">Covid-19<br/>
-							코로나 자가진단
+							코로나<br/>자가진단
 							</h1>
-							<p>Another fine responsive<br />
+						 	<p>Another fine responsive<br />
 							site template freebie<br />
 							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
 							<ul class="actions special">
