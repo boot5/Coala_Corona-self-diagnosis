@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
+<!-- 자가진단메인페이지  -->
 	<head>
 		<title>코로나 자가진단</title>
 		<meta charset="utf-8" />
