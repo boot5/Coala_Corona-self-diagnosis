@@ -30,7 +30,7 @@
 								<li><a href="#" class="button primary">자가진단</a></li>
 							</ul>
 						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
+						<a href="#one" class="more scrolly">Learn More..</a>
 					</section>
 
 				<!-- One -->
