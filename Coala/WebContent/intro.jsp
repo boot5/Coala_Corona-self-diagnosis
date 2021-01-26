@@ -19,7 +19,7 @@
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
-				<!-- Header    -->
+				<!-- Header -->
 				<jsp:include page="menu.jsp"/>
 				
 				<!-- Main -->
