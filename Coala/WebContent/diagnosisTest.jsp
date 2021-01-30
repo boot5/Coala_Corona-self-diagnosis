@@ -39,14 +39,14 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">								
-								<FORM METHOD="POST" ACTION="researchAns.jsp">
+								<FORM METHOD="POST" ACTION="processDiagnosisTest.jsp">
 									<table>							
 										<%							
 											for (String data : arr) {							
 												groupname = "mind" + i;	
 										%>							
 										<tr>						
-											<td colspan=5>설문: <%=data%>						
+											<td colspan=5>진단: <%=data%>						
 											</td>							
 										</tr>							
 										<tr>							
