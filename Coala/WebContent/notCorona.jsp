@@ -11,7 +11,7 @@
 		<link rel = "stylesheet" href = ".//css//circle.css">
 	</head>
 	<%
-	int total = (int)session.getAttribute("total");
+	double ptotal = (double)session.getAttribute("ptotal");
 	%>
 	<body class="is-preload">
 
@@ -30,17 +30,17 @@
 						<section class="wrapper style5">
 							<div class="inner">								
 								<FORM METHOD="POST" ACTION="주변안심병원.jsp">
-									<section>
+									<section align="center">
 										<h4>코로나 19증상이 의심되지 않습니다.<br/>
 											가까운 병원을 찾아 의사와 상담하세요.
 										</h4>
 									</section>
-									
+									<br/>
 									<section>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<div class = "c100 p25 big green">
-											  <span> <%=total %>% </span>
+												<div class = "c100 p<%=(int)ptotal %> big green">
+											  <span align="center"> <%=(int)ptotal %>% </span>
 											  <div class = "slice">
 											    <div class = "bar"> </div>
 											    <div class = "fill"> </div>
@@ -49,15 +49,16 @@
 											</div>
 										</div>
 									</section>
-									
+									<br/>
 									<section>
 										<div class="row gtr-50 gtr-uniform">
 											<div class="col-12"><span class="image fit"><img src="images/d1.png" alt="" /></span></div>
 										</div>						
 									</section>
-								
-									<% System.out.println(total); %>
-									<section>
+		
+									<% System.out.println("값 : "+ptotal); %>
+									<br/>
+									<section align="center">
 										<input type = "submit" value="안심병원 알아보기" />	
 									</section>
 				

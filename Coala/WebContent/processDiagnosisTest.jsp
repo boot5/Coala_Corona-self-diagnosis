@@ -16,7 +16,14 @@
 		else if(mind.equals("sel4")){jumsu=2;}
 		else {jumsu=1;}
 		total += jumsu;
-		session.setAttribute("total", total);
+		
+		double retotal = total - 5;
+		System.out.println("retotal : "+retotal);
+		double ptotal = (retotal / 25) * 100 ;
+		System.out.println("ptotal : "+ptotal);
+		
+		System.out.println(ptotal);
+		session.setAttribute("ptotal", ptotal);
 		
 	}
 	if (total <13){
