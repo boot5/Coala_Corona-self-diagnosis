@@ -67,7 +67,7 @@
 											}							
 										%>							
 									</table>	
-										<input type = "submit" value="검사결과 확인" />	
+										<input onclick="checkNextArrValidation('<%=arrlen %>')" type = "submit" value="검사결과 확인" />	
 										<input type = "reset" value="선택취소"  />						
 								</FORM>							
 							</div>
@@ -77,7 +77,28 @@
 					<jsp:include page="footer.jsp"/>
 
 			</div>
+		
+		
+		<script type="text/javascript">
 
+			/* radio 예외처리 */
+			function checkNextArrValidation() {
+				
+			var Category1 = $('#<%=arrlen %>');
+			
+				if($(':radio[name="<%=groupname%>"]:checked').length < 1){
+				    alert('모든 진단항목을 선택해주세요.');                        
+				    Category1.focus();
+				    event.preventDefault();
+				}
+				else {
+					alert('진단이 완료되었습니댜!!'); 
+				}
+					
+			}
+			
+		</script>
+		
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
