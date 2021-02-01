@@ -10,7 +10,7 @@
 	       <a href="about.html" class="nav-item">코로나?</a>
            <a href="about.html" class="nav-item">안심병원</a>
            <a href="service.html" class="nav-item">선별진료소</a>
-           <a href="portfolio.html" class="nav-item">자가진단</a>
+           <a href="diagnosisTest.jsp" class="nav-item">자가진단</a>
            <a href="single.html" class="nav-item">뉴스정보</a>
            <a href="contact.html" class="nav-item">공지사항</a>
            <a href="contact.html" class="nav-item">회원가입</a>

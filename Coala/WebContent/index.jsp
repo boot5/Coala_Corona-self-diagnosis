@@ -27,7 +27,7 @@
 							site template freebie<br />
 							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
 							<ul class="actions special">
-								<li><a href="#" class="button primary">자가진단</a></li>
+								<li><a href="diagnosisTest.jsp" class="button primary">자가진단</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
