@@ -10,10 +10,10 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<%
-
-		String arr[] = { "1.37.5도 이상 발열이 있었나요? ", "2. 잦은 기침 증상이나 인후통, 일반적인 감기(콧물, 기침, 발열) 증상이 있었나요?",
-				"3. 최근 14일 이내에 확진자, 접촉자와 만난 적이 있었나요?", "최근 14일 이내에 해외여행을 다녀오셨거나, 해외에서 오신 가족이나 주변인을 만난 적이 있었나요?",
-				"5.가족 등 함께 생활하는 분 중 최근 고열 또는 감기증상은 있었나요?", "6. 최근 보건당국에서 코로나19 관련연락이 있었나요?" };
+	
+		String arr[] = { " 37.5도 이상 발열이 있었나요? ", " 잦은 기침 증상이나 인후통, 일반적인 감기(콧물, 기침, 발열) 증상이 있었나요?",
+				" 최근 14일 이내에 확진자, 접촉자와 만난 적이 있었나요?", "최근 14일 이내에 해외여행을 다녀오셨거나, 해외에서 오신 가족이나 주변인을 만난 적이 있었나요?",
+				" 가족 등 함께 생활하는 분 중 최근 고열 또는 감기증상은 있었나요?", " 최근 보건당국에서 코로나19 관련연락이 있었나요?" };
 		String ans[] = { "매우 그렇다", "그렇다", "보통이다.", "아니다.", "매우아니다." };
 		int i = 1;
 		int j = 1;
@@ -80,12 +80,12 @@
 		
 		
 		<script type="text/javascript">
-
+		
 			/* radio 예외처리 */
 			function checkNextArrValidation() {
-				
+					
 			var Category1 = $('#<%=arrlen %>');
-			
+				
 				if($(':radio[name="<%=groupname%>"]:checked').length < 1){
 				    alert('모든 진단항목을 선택해주세요.');                        
 				    Category1.focus();
@@ -98,7 +98,7 @@
 			}
 			
 		</script>
-		
+			
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
