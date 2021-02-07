@@ -1,23 +1,19 @@
-<%@page import="kr.gov.selection.model.SelectionDTO"%>
+<%@page import="kr.gov.safe.model.SafeDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <%
 	String sessionId = (String)session.getAttribute("sessionId");
-	ArrayList<SelectionDTO> selectinoList = (ArrayList<SelectionDTO>)request.getAttribute("selectionlist");
+	ArrayList<SafeDTO> safeList = (ArrayList<SafeDTO>)request.getAttribute("safelist");
 	int totalRecord = ((Integer)request.getAttribute("totalRecord")).intValue();
 	int totalPage = ((Integer)request.getAttribute("totalPage")).intValue();
 	int pageNum = ((Integer)request.getAttribute("pageNum")).intValue();
-%>
-    
-    
+%>    
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>선별 진료소</title>
+		<title>안심 병원</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -34,8 +30,8 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>주변 선별진료소 알아보기</h2>
-							<p>검사결과 코로나19 증상이 의심됩니다.</p>
+							<h2>주변 안심병원 알아보기</h2>
+							<p>검사결과 코로나19 증상이 의심되지 않습니다.</p>
 						</header>
 						<section class="wrapper style5" align="center">
 							<div class="inner">
@@ -55,27 +51,27 @@
 										<td>연번</td>
 										<td>시도</td>
 										<td>시군구</td>
-										<td>선별진료소</td>
+										<td>안심병원</td>
 										<td>전화번호</td>
 										<!-- <td>지도</td> -->
 									</tr>
 									<div>
 										<form action="" method="post">
 											<div class="text-right">
-												<h2><span class="badge badge-danger">선별진로소 수 : <%=totalPage %></span></h2>
+												<h2><span class="badge badge-danger">안심 병원수 : <%=totalPage %></span></h2>
 											</div>
 										</form>
 									</div>
 									<%
-									for (int i = 0; i<selectinoList.size(); i++){
+									for (int i = 0; i<safeList.size(); i++){
 									%>
 									
 									<tr>
-										<td> <%=selectinoList.get(i).getNum()%> </td>
-										<td> <%=selectinoList.get(i).getSido()%> </td>
-										<td> <%=selectinoList.get(i).getSigungu()%> </td>
-										<td> <%=selectinoList.get(i).getOname()%> </td>
-										<td> <%=selectinoList.get(i).getRphone()%> </td>
+										<td> <%=safeList.get(i).getNum()%> </td>
+										<td> <%=safeList.get(i).getSsido()%> </td>
+										<td> <%=safeList.get(i).getSsigungu()%> </td>
+										<td> <%=safeList.get(i).getSoname()%> </td>
+										<td> <%=safeList.get(i).getSrphone()%> </td>
 										<!-- <td>지도</td> -->
 									</tr>
 									

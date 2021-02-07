@@ -29,7 +29,7 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">								
-								<FORM METHOD="POST" ACTION="주변안심병원.jsp">
+								<FORM METHOD="POST" ACTION="${pageContext.request.contextPath}/safeListAction.do?pageNum=1">
 									<section align="center">
 										<h4>코로나 19증상이 의심되지 않습니다.<br/>
 											가까운 병원을 찾아 의사와 상담하세요.
