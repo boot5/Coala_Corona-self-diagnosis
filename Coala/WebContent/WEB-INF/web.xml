@@ -9,4 +9,40 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+    <!-- 404에러가 발생하면 자동으로 exceptionNoPage.jsp 페이지 보여주게 된다.  -->
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/exceptionNoPage.jsp</location>
+  </error-page>
+  
+  <login-config>	<!-- 시큐리티 인증 설정 -->
+  	<auth-method>FORM</auth-method>	<!-- 폼 인증처리 방식 -->
+  	<form-login-config>
+  		<form-login-page>/login.jsp</form-login-page> <!-- 로그인이 성공할 경우 -->
+  		<form-error-page>/login_failed.jsp</form-error-page> <!-- 로그인이 실패할 경우 -->
+  	</form-login-config>
+  </login-config>
+  
+   <!-- 확장자가 /selectionListAction.do로 끝나는 요청(파일)들을 컨트롤러로 보내기위해 매핑 -->
+  <servlet>
+  	<servlet-name>SelectionController</servlet-name>
+  	<servlet-class>kr.gov.selection.controller.SelectionController</servlet-class>
+  </servlet> 
+  <servlet-mapping>
+ 	<servlet-name>SelectionController</servlet-name>
+  	<url-pattern>/selectionListAction.do</url-pattern>
+  </servlet-mapping>
+  
+     <!-- 확장자가 /safeListAction.do로 끝나는 요청(파일)들을 컨트롤러로 보내기위해 매핑 -->
+  <servlet>
+  	<servlet-name>SafeController</servlet-name>
+  	<servlet-class>kr.gov.safe.controller.SafeController</servlet-class>
+  </servlet> 
+  <servlet-mapping>
+ 	<servlet-name>SafeController</servlet-name>
+  	<url-pattern>/safeListAction.do</url-pattern>
+  </servlet-mapping>
+
+  
 </web-app>
+

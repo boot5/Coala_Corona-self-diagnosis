@@ -31,7 +31,7 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">								
-								<FORM METHOD="POST" ACTION="주변선별진료소.jsp">
+								<FORM METHOD="POST" ACTION="${pageContext.request.contextPath}/selectionListAction.do?pageNum=1">
 									<section align="center">
 										<h4 style="color: red;">코로나19 증상이 의심됩니다.<br/><br/>											
 											먼저 관할 보건소 또는 1339 콜센터 등의 상담을 받으신 후 
@@ -65,7 +65,7 @@
 									<% System.out.println("값 : "+ptotal); %>
 									<br/>
 									<section align="center">
-										<input type = "submit" value="안심병원 알아보기" />	
+										<input type = "submit" value="선별진료소 알아보기" />	
 									</section>
 						
 								</FORM>							

@@ -27,15 +27,15 @@
 		
 	}
 	if (total <13){
-		level = "마음가짐이 좋습니다. 항상 행복하세요.";
+		level = " ";
 		response.sendRedirect("notCorona.jsp");
 	}
 	else if (total <19){
-		level = "우울감에 주의가 필요합니다. 기분전환을 해보세요.";
+		level = " ";
 		response.sendRedirect("coronaSuspicion.jsp");
 	}
 	else {
-		level = "심각한 우울증일 수 있습니다. 의사와 상담하세요.";
+		level = " ";
 		response.sendRedirect("coronaSuspicion.jsp");
 	}
 %>
