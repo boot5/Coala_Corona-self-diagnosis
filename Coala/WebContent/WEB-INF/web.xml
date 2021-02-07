@@ -33,5 +33,14 @@
   	<url-pattern>*.do</url-pattern>
   </servlet-mapping>
   
+     <!-- 확장자가 *.do로 끝나는 요청(파일)들을 컨트롤러로 보내기위해 매핑 -->
+  <servlet>
+  	<servlet-name>SafeController</servlet-name>
+  	<servlet-class>kr.gov.safe.controller.SafeController</servlet-class>
+  </servlet> 
+  <servlet-mapping>
+ 	<servlet-name>SafeController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
 </web-app>
 

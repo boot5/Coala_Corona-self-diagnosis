@@ -16,7 +16,7 @@
 	<nav id="nav">
 	       <!-- <a href="#" class="nav-item">코로나?</a> -->
 	       		
-                          <a href="${pageContext.request.contextPath}/safeHospital.jsp" class="nav-item">안심병원</a>
+                          <a href="${pageContext.request.contextPath}/safeListAction.do?pageNum=1" class="nav-item">안심병원</a>
                           <a href="${pageContext.request.contextPath}/selectionListAction.do?pageNum=1">선별진료소</a>
                           <a href="${pageContext.request.contextPath}/diagnosisTest.jsp" class="nav-item">자가진단</a>
                           <a href="#" class="nav-item">뉴스정보</a>
