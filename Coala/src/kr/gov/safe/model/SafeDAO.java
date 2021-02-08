@@ -41,7 +41,7 @@ public class SafeDAO {
 			sql = "select * from safe_csv order by num desc";
 		}
 		else { 
-			sql = "select * from safe_csv where " +items+ "like '%"+text+"%' order by num desc";  //매개변수가 파라미터로 넘어오는 값으로 검색
+			sql = "select * from safe_csv where " +items+ " like '%"+text+"%' order by num desc";  //매개변수가 파라미터로 넘어오는 값으로 검색
 		} 
 		
 		try {
@@ -101,7 +101,7 @@ public class SafeDAO {
 			sql = "select count(*) from safe_csv";
 		}
 		else {
-			sql = "select count(*) from safe_csv where " +items+ "like '%"+text+"%' "; //파라미터로 넘어오는 값으로 검색
+			sql = "select count(*) from safe_csv where " +items+ " like '%"+text+"%' "; //파라미터로 넘어오는 값으로 검색
 		}
 		
 	

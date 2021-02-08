@@ -27,3 +27,13 @@ desc selection_csv;
 alter table selection_csv add num int auto_increment primary key; 
 
 select * from selection_csv order by num desc;
+
+select * from safe_csv;
+alter table safe_csv add num int auto_increment primary key; 
+
+select * from safe_csv where  like '%¼­¿ï%' order by num desc;
+
+
+
+
+
