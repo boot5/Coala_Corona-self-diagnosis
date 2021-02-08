@@ -17,7 +17,7 @@ public class SCListCommand implements SSCommand {
 		ArrayList<SafeDTO> safelist = new ArrayList<>();
 		
 		int pageNum = 1;
-		int limit = 5;			//한페이지에 나타낼 게시글 수
+		int limit = 20;			//한페이지에 나타낼 게시글 수
 		
 		if(request.getParameter("pageNum") != null) {
 			pageNum = Integer.parseInt(request.getParameter("pageNum")); //페이지 값이 null이 아니라면 해당 페이지를 숫자로 변환하여 저장함.
@@ -30,7 +30,7 @@ public class SCListCommand implements SSCommand {
 		safelist = sDao.getSafeList(pageNum, limit, items, text);	 	//DB에 저장되어  있는 실제 게시글 가져옴
 		
 		//홈페이지 수 구하기
-		int totalPage = 0;
+		int totalPage = 1;
 		
 		if(totalPage % limit == 0) {
 			totalPage = totalRecord / limit;

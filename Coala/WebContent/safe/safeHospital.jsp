@@ -2,6 +2,8 @@
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 
 <%
 	String sessionId = (String)session.getAttribute("sessionId");
@@ -35,53 +37,80 @@
 						</header>
 						<section class="wrapper style5" align="center">
 							<div class="inner">
+								<form action='<c:url value="./safeListAction.do" />' method="post">
 								
-								<div class="row gtr-uniform">
-									<div class="col-9 col-12-xsmall">
-										<input type="text" name="serch"  placeholder="검색창"> 
-									</div>
-										<div class="col-3 col-12-xsmall">
-										<input type="button" value="검색">
-									</div>
-								</div>
-								시도 및 시군구, 선별진료소, 전화번호를 통합하여 검색합니다.<br/>
-								검색어 예시 : '서울' 또는 '중구' 또는 '보건소' 또는 '051'(전화번호 일부) 	
-								<table border="1">
-									<tr>
-										<td>연번</td>
-										<td>시도</td>
-										<td>시군구</td>
-										<td>안심병원</td>
-										<td>전화번호</td>
-										<!-- <td>지도</td> -->
-									</tr>
-									<div>
-										<form action="" method="post">
-											<div class="text-right">
-												<h2><span class="badge badge-danger">안심 병원수 : <%=totalPage %></span></h2>
+									<td width="100%" align="left">&nbsp;&nbsp;
+										<select name="items" class="txt">
+											<option value="ssido">시도</option>
+											<option value="ssigungu">시군구</option>	
+											<option value="soname">병원이름</option>	
+											<option value="srphone">전화번호</option>		
+										</select>
+										<div class="row gtr-uniform">
+											<div class="col-9 col-12-xsmall">
+												<input name="text" type="text" class="col-9 col-12-xsmall" />
 											</div>
-										</form>
+											<div class="col-3 col-12-xsmall">
+												<input type="submit" name="items" id="btnAdd" class="btn btn-primary" value="검색">
+											</div>
+										</div>	
+									</td>
+																
+									시도 및 시군구, 선별진료소, 전화번호를 목록에서 선택 후 검색합니다.<br/>
+									검색어 예시 : '서울' 또는 '중구' 또는 '보건소' 또는 '051'(전화번호 일부) 	
+									<table border="1">
+										<tr>
+											<td>연번</td>
+											<td>시도</td>
+											<td>시군구</td>
+											<td>안심병원</td>
+											<td>전화번호</td>
+											<!-- <td>지도</td> -->
+										</tr>
+										<div>
+											<form action="" method="post">
+												<div class="text-right">
+													<h2><span class="badge badge-danger">진료가능 안심병원 : <%=totalRecord %></span></h2>
+												</div>
+											</form>
+										</div>
+										<%
+										for (int i = 0; i<safeList.size(); i++){
+										%>
+										
+										<tr>
+											<td> <%=safeList.get(i).getNum()%> </td>
+											<td> <%=safeList.get(i).getSsido()%> </td>
+											<td> <%=safeList.get(i).getSsigungu()%> </td>
+											<td> <%=safeList.get(i).getSoname()%> </td>
+											<td> <%=safeList.get(i).getSrphone()%> </td>
+											<!-- <td>지도</td> -->
+										</tr>
+										
+										<%
+										}
+										%>
+	
+										
+									</table>
+									
+									<div align="center"> 		<!-- 페이지 수 표시 --> 
+										<c:set var="pageNum" value="<%=pageNum %>" /> <!-- 페이지수를 jstl로 표시 -->
+										<c:forEach var="i" begin="1" end="<%=totalPage %>" >
+											<a href=' <c:url value="./safeListAction.do?pageNum=${i }" />'>
+												<c:choose>
+													<c:when test="${pageNum==i }">
+														<font color="4C5317"><b>[${i }]</b></font>
+													</c:when>
+													<c:otherwise>
+														<font color="4C5317">[${i }]</font>
+													</c:otherwise>
+												</c:choose>
+											</a>
+										</c:forEach>	
 									</div>
-									<%
-									for (int i = 0; i<safeList.size(); i++){
-									%>
 									
-									<tr>
-										<td> <%=safeList.get(i).getNum()%> </td>
-										<td> <%=safeList.get(i).getSsido()%> </td>
-										<td> <%=safeList.get(i).getSsigungu()%> </td>
-										<td> <%=safeList.get(i).getSoname()%> </td>
-										<td> <%=safeList.get(i).getSrphone()%> </td>
-										<!-- <td>지도</td> -->
-									</tr>
-									
-									<%
-									}
-									%>
-
-									
-								</table>
-								
+								</form>
 							</div>
 						</section>
 					</article>

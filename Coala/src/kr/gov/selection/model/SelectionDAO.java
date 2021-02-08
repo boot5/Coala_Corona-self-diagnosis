@@ -41,7 +41,7 @@ public class SelectionDAO {
 			sql = "select * from selection_csv order by num desc";
 		}
 		else { 
-			sql = "select * from selection_csv where " +items+ "like '%"+text+"%' order by num desc";  //매개변수가 파라미터로 넘어오는 값으로 검색
+			sql = "select * from selection_csv where " +items+ " like '%"+text+"%' order by num desc";  //매개변수가 파라미터로 넘어오는 값으로 검색
 		} 
 		
 		try {
@@ -103,7 +103,7 @@ public class SelectionDAO {
 			sql = "select count(*) from selection_csv";
 		}
 		else {
-			sql = "select count(*) from selection_csv where " +items+ "like '%"+text+"%' "; //파라미터로 넘어오는 값으로 검색
+			sql = "select count(*) from selection_csv where " +items+ " like '%"+text+"%' "; //파라미터로 넘어오는 값으로 검색
 		}
 		
 	
