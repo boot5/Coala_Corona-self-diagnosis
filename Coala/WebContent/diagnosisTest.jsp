@@ -29,7 +29,7 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-				<jsp:include page="menu.jsp"/>
+				<jsp:include page="./menu/menu.jsp"/>
 				
 				<!-- Main -->
 					<article id="main">
@@ -74,7 +74,7 @@
 						</section>
 					</article>
 				<!-- Footer -->
-					<jsp:include page="footer.jsp"/>
+					<jsp:include page="./menu/footer.jsp"/>
 
 			</div>
 		

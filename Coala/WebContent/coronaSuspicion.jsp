@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel = "stylesheet" href = ".//css//circle.css">
+		<link rel = "stylesheet" href = "./assets/circlebar/css/circle.css">
 	</head>
 	<%
 	double ptotal = (double)session.getAttribute("ptotal");
@@ -21,7 +21,7 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-				<jsp:include page="menu.jsp"/>
+				<jsp:include page="./menu/menu.jsp"/>
 				
 				<!-- Main -->
 					<article id="main">
@@ -29,7 +29,7 @@
 							<h2>코로나19 증상이 의심됩니다.</h2>
 							<p>Corona 19 symptoms are suspected.</p>
 						</header>
-						<section class="wrapper style5">
+						<section class="wrapper style5" >
 							<div class="inner">								
 								<FORM METHOD="POST" ACTION="${pageContext.request.contextPath}/selectionListAction.do?pageNum=1">
 									<section align="center">
@@ -74,7 +74,7 @@
 													
 					</article>
 				<!-- Footer -->
-					<jsp:include page="footer.jsp"/>
+					<jsp:include page="./menu/footer.jsp"/>
 
 			</div>
 
