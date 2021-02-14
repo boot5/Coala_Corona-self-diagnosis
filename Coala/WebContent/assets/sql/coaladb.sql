@@ -36,4 +36,3 @@ select * from safe_csv where  like '%¼­¿ï%' order by num desc;
 
 
 
-

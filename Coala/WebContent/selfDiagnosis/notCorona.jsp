@@ -6,9 +6,9 @@
 		<title>코로나19 증상이 의심되지 않습니다.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel = "stylesheet" href = ".//css//circle.css">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel = "stylesheet" href = "../assets/circlebar/css/circle.css">
 	</head>
 	<%
 	double ptotal = (double)session.getAttribute("ptotal");
@@ -19,7 +19,7 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-				<jsp:include page="menu.jsp"/>
+				<jsp:include page="../menu/menu.jsp"/>
 				
 				<!-- Main -->
 					<article id="main">
@@ -52,7 +52,7 @@
 									<br/>
 									<section>
 										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/d1.png" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="../images/d1.png" alt="" /></span></div>
 										</div>						
 									</section>
 		
@@ -68,17 +68,17 @@
 						
 					</article>
 				<!-- Footer -->
-					<jsp:include page="footer.jsp"/>
+					<jsp:include page="../menu/footer.jsp"/>
 
 			</div>
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
