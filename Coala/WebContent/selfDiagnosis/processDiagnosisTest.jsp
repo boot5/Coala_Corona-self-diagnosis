@@ -29,14 +29,19 @@
 	if (total <13){
 		level = " ";
 		response.sendRedirect("notCorona.jsp");
+		session.setAttribute("total", total);
 	}
 	else if (total <19){
 		level = " ";
 		response.sendRedirect("coronaSuspicion.jsp");
+		session.setAttribute("total", total);
 	}
 	else {
 		level = " ";
 		response.sendRedirect("coronaSuspicion.jsp");
+		session.setAttribute("total", total);
 	}
 %>
+
+
 		

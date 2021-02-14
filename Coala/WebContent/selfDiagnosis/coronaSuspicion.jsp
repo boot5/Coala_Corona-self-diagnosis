@@ -57,7 +57,7 @@
 									<br/>
 									<section>
 										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/d1.png" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="../images/d1.png" alt="" /></span></div>
 										</div>						
 									</section>
 								
@@ -65,7 +65,11 @@
 									<% System.out.println("값 : "+ptotal); %>
 									<br/>
 									<section align="center">
-										<input type = "submit" value="선별진료소 알아보기" />	
+										<input type = "submit" value="선별진료소 알아보기" />
+										<%-- <% 
+											int total = (int)session.getAttribute("total"); 
+											System.out.println(total);
+										%>	 --%>
 									</section>
 						
 								</FORM>							

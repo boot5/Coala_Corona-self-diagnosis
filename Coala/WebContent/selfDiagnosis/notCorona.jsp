@@ -52,7 +52,7 @@
 									<br/>
 									<section>
 										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/d1.png" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="../images/d1.png" alt="" /></span></div>
 										</div>						
 									</section>
 		

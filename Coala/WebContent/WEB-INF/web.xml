@@ -42,16 +42,7 @@
  	<servlet-name>SafeController</servlet-name>
   	<url-pattern>/safeListAction.do</url-pattern>
   </servlet-mapping>
-	
-   <!-- 확장자가 /stateViewAction.do로 끝나는 요청(파일)들을 컨트롤러로 보내기위해 매핑 -->
-   <servlet>
-  	<servlet-name>StatusController</servlet-name>
-  	<servlet-class>kr.gov.status.controller.StatusController</servlet-class>
-  </servlet> 
-  <servlet-mapping>
- 	<servlet-name>StatusController</servlet-name>
-  	<url-pattern>/stateViewAction.do</url-pattern>
-  </servlet-mapping>	
+		
   
 </web-app>
 
