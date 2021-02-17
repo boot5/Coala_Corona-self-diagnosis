@@ -42,6 +42,15 @@
  	<servlet-name>SafeController</servlet-name>
   	<url-pattern>/safeListAction.do</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BoardController</servlet-name>
+  	<servlet-class>kr.gov.mvc.controller.BoardController</servlet-class>
+  </servlet> 
+  <servlet-mapping>
+ 	<servlet-name>BoardController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
 		
   
 </web-app>

@@ -41,8 +41,15 @@
 										</h4>
 									</section>
 									<br/>											
-									<section>
+										<section align="center">
 											<div class="row">
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;
+												
 												<div>
 													<div class = "c100 p<%=(int)ptotal %> big orange" >
 												  <span align="center"> <%=(int)ptotal %>% </span>
@@ -52,11 +59,11 @@
 												  </div>
 												</div>
 												</div>
-											</div>			
-									</section>
+											</div>		
+										</section>
 									<br/>
 									<section>
-										<div class="row gtr-50 gtr-uniform">
+										<div class="row">
 											<div class="col-12"><span class="image fit"><img src="../images/d1.png" alt="" /></span></div>
 										</div>						
 									</section>
