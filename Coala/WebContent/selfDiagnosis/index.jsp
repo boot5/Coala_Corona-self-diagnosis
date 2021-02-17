@@ -52,7 +52,7 @@
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>회원가입 자신의 상태를 기록하세요.</h2>
+								<h2>회원가입 자신의 상태를 진단하세요.</h2>
 								<p>좌측의 회원가입 버튼을 눌러주세요</p>
 							</header>
 							<ul class="actions stacked">
