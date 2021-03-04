@@ -50,7 +50,7 @@
 									<div class="form-group row">
 										<label class="col-sm-2 control-label">이름</label>
 										<div class="col-sm-3">
-											<input name="name" class="form-control" value="<%=notice.getName() %>" readonly> <!-- DB에 저장되어 있는 이름값 출력  -->
+											<input name="name" type="text" class="form-control" value="<%=notice.getName() %>" readonly> <!-- DB에 저장되어 있는 이름값 출력  -->
 										</div>
 									</div>
 									
@@ -61,12 +61,12 @@
 										<%
 											if(sessionId.equals(userId)) {		/* 게시글 작성자가 맞다면 => 수정이 가능하도록 함 */
 										%>
-											<input name="subject" class="form-control" value="<%=notice.getSubject() %>"> <!-- DB에 저장되어 있는 제목 출력  -->
+											<input name="subject" type="text"  class="form-control" value="<%=notice.getSubject() %>"> <!-- DB에 저장되어 있는 제목 출력  -->
 										<%
 											}
 											else {
 										%>
-											<input name="subject" class="form-control" value="<%=notice.getSubject() %>" readonly> <!-- DB에 저장되어 있는 제목 출력  -->
+											<input name="subject" type="text" class="form-control" value="<%=notice.getSubject() %>" readonly> <!-- DB에 저장되어 있는 제목 출력  -->
 										<%
 											}
 										%>
@@ -100,9 +100,10 @@
 											<c:set var="userId" value="<%= notice.getId() %>" />
 											<c:if test="${sessionId == userId || sessionId == 'admin'}">
 												<p><a href="./boardDeleteAction.do?num=<%=notice.getNum() %>&pageNum=<%=nowPage %>"
-															class="button">삭제</a>
+															class="button">삭제</a> <br/>
 												<input type="submit" class="button" value="수정">			
 											</c:if>
+											<br/>
 											<a href="./boardListAction.do?pageNum=<%=nowPage %>" class="button">목록</a>
 										</div>
 									</div>
