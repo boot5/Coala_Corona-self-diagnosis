@@ -6,8 +6,8 @@
 		<title>Elements - Spectral by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -15,7 +15,7 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<jsp:include page="menu.jsp"/>
+					<jsp:include page="../menu/menu.jsp"/>
 
 				<!-- Main -->
 					<article id="main">
@@ -337,7 +337,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</article>
 
 				<!-- Footer -->
-					<jsp:include page="footer.jsp"/>
+					<jsp:include page="../menu/footer.jsp"/>
 
 			</div>
 

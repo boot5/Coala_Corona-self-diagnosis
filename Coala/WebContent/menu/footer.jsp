@@ -9,6 +9,6 @@
 		<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 	</ul>
 	<ul class="copyright">
-		<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		<li><a a href="https://github.com/kreboot">&copy; https://github.com/kreboot</a></li>
 	</ul>
 </footer>
